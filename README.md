@@ -17,3 +17,12 @@ In contrast, the url:
 returns 'no' because this position in the sky is not being observed.
 
 Note: ra and dec must be in decimal degrees.
+
+
+## Developer documentation
+
+The Makefile contains the following entries for working with the Heroku platform:
+* `make local` runs the service on localhost;
+* `make setup` registers the app with heroku (only needs to be done once);
+* `make deploy` pushes the current version to heroky;
+* `make log` shows the tail of the current heroku logs.
