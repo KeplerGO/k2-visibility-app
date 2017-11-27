@@ -19,7 +19,7 @@ from . import PACKAGEDIR
 k2app = Flask('k2app', static_url_path='')
 
 
-def _is_k2_observing(ra, dec, campaign=16, match_radius=3/3600.):
+def _is_k2_observing(ra, dec, campaign=16, match_radius=4/3600.):
     pixel_db_fn = os.path.join(PACKAGEDIR, 'data',
                                'k2-c{}-pixel-coordinates.feather'.format(campaign))
     try:
