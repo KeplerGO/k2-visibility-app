@@ -43,7 +43,7 @@ def demo():
 
 @k2app.route('/is-k2-observing')
 def is_k2_observing():
-    campaign = request.args.get('campaign', default=18, type=int)
+    campaign = request.args.get('campaign', default=19, type=int)
     ra = request.args.get('ra', default=None, type=float)
     dec = request.args.get('dec', default=None, type=float)
     if ra is None or dec is None:
