@@ -102,3 +102,4 @@ ENV/
 
 # Custom additions:
 sandbox
+.pytest_cache
